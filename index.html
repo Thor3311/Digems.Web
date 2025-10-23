@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digems - TopUp</title>
+    <link rel="icon" href="/img/logo_store-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+                <div class="search-section">
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-input" 
+                       placeholder="Ketik kata kunci..." autocomplete="off">
+                <button id="searchButton" class="search-button">Cari</button>
+            </div>
+
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo" >DiGems</div>
+                <ul class="nav-links">
+                    <li><a href="Daftar Game/daftar_game.html">Game</a></li>
+                    <li><a href="#" class="btn btn-primary">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+        <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+                        <div class="search-section">
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-input" 
+                placeholder="Ketik kata kunci..." autocomplete="off">
+                <button id="searchButton" class="search-button">Cari</button>
+            </div>
+    </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Top Up Game Favorit Anda</h1>
+            <p>Dapatkan koin, diamond, dan item game dengan proses cepat dan aman. Top up game favorit Anda sekarang juga!</p>
+            <a href="#games-grid" class="btn btn-primary">Top Up Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section id="games" class="section">
+        <div class="container">
+            <div class="section-title">
+                
+                <h2>Game Populer</h2>
+                <p>Pilih game favorit Anda untuk melakukan top up</p>
+            </div>
+            <div class="games-grid">
+                <div class="game-card">
+                    <div class="game-img"> <img src="/img/ml logo.png" alt="Icon ML" style="width:100%; height:150px; object-fit:cover;"></div>
+                    <div class="game-info">
+                        <h3>Mobile Legends</h3>
+                        <p>Top up Diamond dengan harga terbaik</p>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-img"> <img src="/img/Free_fire.jpg" alt="Icon FF" style="width:100%; height:150px; object-fit:cover;"></div>
+                    <div class="game-info">
+                        <h3>Free Fire</h3>
+                        <p>Top up Diamond dengan harga terbaik</p>
+                    </div>
+                </div>
+                <div class="game-card">
+                    
+                    <div class="game-img"> <img src="/img/genshin logo.jpg" alt="Icon GI" style="width:100%; height:150px; object-fit:cover;"></div>
+                    <div class="game-info">
+                        <h3>Genshin Impact</h3>
+                        <p>Top up Genesis Crystal dengan harga terbaik</p>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-img"> <img src="/img/Hsr logo.jpg" alt="Icon Valo" style="width:300px; height:150px;"></div>
+                    <div class="game-info">
+                        <h3>Valorant</h3>
+                        <p>Top up Points dengan harga terbaik</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>GameTopUp</h3>
+                    <p>Platform top up game terpercaya dengan proses cepat dan aman.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Bantuan</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Cara Top Up</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Hubungi Kami</a></li>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Kontak</h3>
+                    <ul class="footer-links">
+                        <li><i>Email   : digemsmarket@gmail.com</i></li>
+                        <li><i>Telepon : +62 123 4567 890</i></li>
+                        <li><i>WhatsApp: +62 123 4567 890</i></li>
+                    </ul>
+                </div>
+              </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+                // Search functionality for game selection
+        function toggleMenu() {
+            const mobileNav = document.getElementById('mobileNav');
+            mobileNav.classList.toggle('active');
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const mobileNav = document.getElementById('mobileNav');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+
+            if (!mobileNav.contains(event.target) && !menuBtn.contains(event.target)) {
+                mobileNav.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

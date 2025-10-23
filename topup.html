@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="topup.css">
+    <script src="topup.js" defer></script>
+</head>
+<body>
+        <section id="topup" class="section" style="background-color: #f0f2f5;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Top Up Game</h2>
+                <p>Isi form berikut untuk melakukan top up</p>
+            </div>
+            <div class="topup-form">
+                <form id="topupForm">
+                    <div class="form-group">
+                        <label for="game">Pilih Game</label>
+                        <select id="game" class="form-control" required>
+                            <option value="">-- Pilih Game --</option>
+                            <option value="mobile-legends">Mobile Legends</option>
+                            <option value="free-fire">Free Fire</option>
+                            <option value="genshin-impact">Genshin Impact</option>
+                            <option value="valorant">Valorant</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="user-id">User ID</label>
+                        <input type="text" id="user-id" class="form-control" placeholder="Masukkan User ID" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="server">Server ID (Opsional)</label>
+                        <input type="text" id="server" class="form-control" placeholder="Masukkan Server ID">
+                    </div>
+                    <div class="form-group">
+                        <label>Pilih Nominal</label>
+                        <div class="nominal-options">
+                            <div class="nominal-option" data-value="5">5 Diamond</div>
+                            <div class="nominal-option" data-value="12">12 Diamond</div>
+                            <div class="nominal-option" data-value="28">28 Diamond</div>
+                            <div class="nominal-option" data-value="50">50 Diamond</div>
+                            <div class="nominal-option" data-value="100">100 Diamond</div>
+                            <div class="nominal-option" data-value="200">200 Diamond</div>
+                        </div>
+                    </div>
+                    <div class="price" id="price-display">Rp 0</div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Beli Sekarang</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>

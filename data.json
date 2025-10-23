@@ -1,0 +1,14 @@
+{
+    "articles": [
+        {
+            "id": 1,
+            "title": "Belajar JavaScript Modern",
+            "content": "JavaScript adalah bahasa pemrograman yang sangat powerful untuk pengembangan web...",
+            "category": "programming",
+            "tags": ["javascript", "web", "frontend"],
+            "date": "2024-01-15",
+            "author": "John Doe",
+            "readTime": "5 min"
+        }
+    ]
+}
